@@ -1,9 +1,12 @@
-import { GeistSans } from "geist/font/sans";
 import "./globals.css";
+import "./fonts.css";
+
+// Internal Dependencies
+import Navbar from "@/components/Navbar";
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000";
+  : "http://localhost:8080";
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
@@ -17,11 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={GeistSans.className}>
-      <body className="bg-background text-foreground">
-        <main className="min-h-screen flex flex-col items-center">
-          {children}
-        </main>
+    <html lang="en">
+      <body className="bg-slate-950 text-stone-100">
+        <Navbar/>
+        { children }
       </body>
     </html>
   );
