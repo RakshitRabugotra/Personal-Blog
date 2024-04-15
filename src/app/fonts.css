@@ -1,0 +1,19 @@
+/* Montserrat font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Monument Extended fonts for heading */
+@font-face {
+    font-family: "monument-regular";
+    src: url("/assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "monument-ultrabold";
+    src: url("/assets/fonts/MonumentExtended-Ultrabold.otf") format("opentype");
+    font-weight: normal;
+    font-optical-sizing: auto;
+    font-style: normal;
+}

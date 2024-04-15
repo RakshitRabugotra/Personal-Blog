@@ -1,27 +1,27 @@
 import { twMerge } from "tailwind-merge";
 
-export default function Heading({
+export default function SubHeading({
   id,
   className,
-  center,
+  noTransform,
   children,
 }: {
   id?: string;
   className?: string;
-  center?: boolean;
+  noTransform?: boolean;
   children: React.ReactNode;
 }) {
   return (
-    <h1
+    <h3
       id={id}
       className={twMerge(
-        "font-monumentRegular text-5xl uppercase leading-tight",
+        "font-monumentRegular text-xl md:text-3xl leading-tight",
+        noTransform ? "" : "uppercase",
         className,
-        "text-wrap w-full",
-        center ? "text-center" : "text-left" 
+        "text-wrap w-full text-left"
       )}
     >
       {children}
-    </h1>
+    </h3>
   );
 }

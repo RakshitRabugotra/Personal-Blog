@@ -4,14 +4,17 @@ import "./fonts.css";
 // Internal Dependencies
 import Navbar from "@/components/Navbar";
 
-const defaultUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:8080";
+// Content Dependencies
+import {
+  TITLE as title,
+  DESCRIPTION as description,
+  DEFAULT_URL as defaultUrl,
+} from "@constants";
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Starter Kit",
-  description: "The fastest way to build apps with Next.js and Supabase",
+  title,
+  description,
 };
 
 export default function RootLayout({
@@ -21,9 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-slate-950 text-stone-100">
-        <Navbar/>
-        { children }
+      <body className="bg-neutral-900 text-zinc-200 font-montserrat">
+        <Navbar />
+        {children}
       </body>
     </html>
   );

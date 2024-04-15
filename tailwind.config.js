@@ -14,6 +14,11 @@ module.exports = {
           "background-hover": "hsl(var(--btn-background-hover))",
         },
       },
+      fontFamily: {
+        monumentRegular: ["Monument-Regular", "sans-serif"],
+        monumentUltrabold: ["monument-ultrabold", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"]
+      }
     },
   },
   plugins: [],

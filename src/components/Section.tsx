@@ -15,7 +15,7 @@ export default function Section({
     <div
       id={id}
       className={twMerge(
-        "flex min-h-screen items-center p-4",
+        "flex flex-col min-h-screen items-center p-8 pt-20 gap-4",
         fitHeight ? "h-fit" : "",
         className
       )}
