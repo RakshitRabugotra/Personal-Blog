@@ -46,7 +46,7 @@ function Skill({
         // For larger screens
         "md:flex-col md:basis-1/2 md:p-8 md:border-0",
         // Hover Effect
-        "transition-all hover:scale-95 hover:shadow-lg hover:shadow-zinc-200/40"
+        "transition-all md:hover:scale-95 hover:shadow-lg md:hover:shadow-zinc-200/40"
       )}
       style={{
         backgroundImage: `url(${bgImageSrc})`,

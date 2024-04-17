@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
+    "@react-spring/web": "^9.7.3",
     "@supabase/ssr": "latest",
     "@supabase/supabase-js": "latest",
     "autoprefixer": "10.4.17",
