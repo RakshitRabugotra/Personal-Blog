@@ -19,7 +19,7 @@ export default function About() {
       fitHeight
     >
       <div className="flex flex-col">
-        <Heading className="md:px-24 ">{STRINGS.ABOUT.heading}</Heading>
+        <Heading className="md:px-24 ">{thisSection.title}</Heading>
         {/* Shown in desktop mode */}
         <div className="hidden my-auto p-24 md:block">
           {STRINGS.ABOUT.text && (

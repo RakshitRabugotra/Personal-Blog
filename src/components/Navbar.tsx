@@ -13,18 +13,18 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed bg-neutral-900/95 backdrop-blur-md top-0 h-16 w-full inline-flex justify-end items-center gap-8 px-4 md:px-8">
+      <nav className="fixed bg-neutral-900/95 backdrop-blur-md top-0 h-16 w-full inline-flex justify-center items-center gap-8 px-4 md:px-8">
         {/* Contact and nav-links */}
         {Object.entries(SECTIONS).map(
-          ([section, { title, showInNav }], index) => {
+          ([section, { id, showInNav }], index) => {
             if (!showInNav) return <a className="hidden" key={index}></a>;
             return (
               <a
-                href={"#" + section}
+                href={"#" + id}
                 key={index}
                 className="hidden capitalize underline-offset-4 hover:underline md:block"
               >
-                {title}
+                {section}
               </a>
             );
           }

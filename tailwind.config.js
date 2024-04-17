@@ -17,7 +17,7 @@ module.exports = {
       fontFamily: {
         monumentRegular: ["Monument-Regular", "sans-serif"],
         monumentUltrabold: ["monument-ultrabold", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"]
+        inter: ["Inter", "sans-serif"]
       }
     },
   },

@@ -3,6 +3,7 @@ import "./fonts.css";
 
 // Internal Dependencies
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 // Content Dependencies
 import {
@@ -24,9 +25,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-neutral-900 text-zinc-200 font-montserrat">
+      <body className="bg-neutral-900 text-zinc-200 font-inter">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

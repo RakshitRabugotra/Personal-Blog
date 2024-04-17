@@ -4,11 +4,13 @@ export default function SubHeading({
   id,
   className,
   noTransform,
+  center,
   children,
 }: {
   id?: string;
   className?: string;
   noTransform?: boolean;
+  center?: boolean;
   children: React.ReactNode;
 }) {
   return (
@@ -18,7 +20,8 @@ export default function SubHeading({
         "font-monumentRegular text-xl md:text-3xl leading-tight",
         noTransform ? "" : "uppercase",
         className,
-        "text-wrap w-full text-left"
+        "text-wrap w-full",
+        center ? "text-center" : "text-left"
       )}
     >
       {children}

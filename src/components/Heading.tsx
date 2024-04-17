@@ -15,7 +15,7 @@ export default function Heading({
     <h1
       id={id}
       className={twMerge(
-        "font-monumentRegular text-5xl uppercase leading-tight",
+        "font-monumentRegular text-4xl uppercase leading-tight",
         className,
         "text-wrap w-full",
         center ? "text-center" : "text-left" 
